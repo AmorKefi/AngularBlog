@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <h1>Posts</h1>
+
+  <li *ngFor="let post of Posts" [ngClass]="{ 'list-group-item': true ,'list-group-item-success':post.loveIts>0,'list-group-item-danger': post.loveIts<0}">
+        <app-post-listitem [Post]="post"></app-post-listitem>
+  </li>
+</ul>

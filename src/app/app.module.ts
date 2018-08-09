@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { PostListitemComponent } from './post-listitem/post-listitem.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostListComponent,
+    PostListitemComponent,
   ],
   imports: [
     BrowserModule

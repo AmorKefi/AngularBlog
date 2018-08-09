@@ -1,0 +1,6 @@
+<h3>{{Post.title}}</h3><span class="float-right">{{Post.created_at | date:'short'}}</span>
+<p>
+    {{Post.content}}
+</p>
+<button class="btn btn-success" (click)="Post.loveIts=Post.loveIts+1">Love it!</button>
+<button class="btn btn-danger" (click)="Post.loveIts=Post.loveIts-1">Don't love it!</button>
